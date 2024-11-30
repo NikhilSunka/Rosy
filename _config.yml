@@ -55,4 +55,4 @@ baseurl: "/Rosy" # Set this to "/Rosy" if it's a project site
 lang: en-GB
 
 # Theme (comment out if causing issues)
-theme: garth
+theme: minima
