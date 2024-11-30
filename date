@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Selection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #FFF8DC; /* Light yellow background */
+      color: #FF69B4; /* Pink text */
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 50px;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    .form-container {
+      margin: 30px auto;
+    }
+    label {
+      font-size: 1.2em;
+      display: block;
+      margin: 10px 0;
+    }
+    input[type="date"] {
+      font-size: 1em;
+      padding: 10px;
+      border: 2px solid #FF69B4; /* Pink border */
+      border-radius: 5px;
+      text-align: center;
+      width: 50%;
+      max-width: 300px;
+      color: #FF69B4; /* Pink text */
+    }
+    input[type="date"]:focus {
+      outline: none;
+      border-color: #FF1493; /* Darker pink on focus */
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #FF69B4; /* Pink button */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #FF1493; /* Darker pink on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>Are You Free On...</h1>
+  <h2>(Select the date)</h2>
+
+  <div class="form-container">
+    <form action="cuisine_selection.html" method="GET">
+      <label for="date">Which day Sweetheart?</label>
+      <input type="date" id="date" name="date" required>
+      <br>
+      <button type="click me Tomato" class="button">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
