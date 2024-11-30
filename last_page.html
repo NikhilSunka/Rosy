@@ -21,96 +21,36 @@
       font-size: 2em;
       margin-top: 20px;
     }
-    .flower-container {
-      position: relative;
+    /* Heart animation */
+    .heart-container {
       display: inline-block;
+      position: relative;
       width: 200px;
       height: 200px;
       margin-top: 50px;
     }
-    /* Flower appearance */
-    .flower {
+    .heart {
       position: absolute;
-      width: 70px;
-      height: 70px;
-      background-color: #FF1493; /* Pink color for the flower */
-      border-radius: 50%;
-      animation: bloom 2s ease-out forwards;
+      width: 100px;
+      height: 100px;
+      background-color: #FF1493; /* Pink color for the heart */
+      clip-path: polygon(50% 0%, 0% 35%, 50% 100%, 100% 35%);
+      animation: pulse 1.5s ease-in-out infinite;
     }
-    .flower::before, .flower::after {
-      content: '';
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background-color: #FF69B4;
-      border-radius: 50%;
-      top: -25px;
-      left: -15px;
-      transform: rotate(45deg);
-    }
-    .flower:nth-child(1) {
-      top: 60px;
-      left: 50px;
-      animation-delay: 0.5s;
-    }
-    .flower:nth-child(2) {
-      top: 40px;
-      left: 130px;
-      animation-delay: 1s;
-    }
-    .flower:nth-child(3) {
-      top: 100px;
-      left: 120px;
-      animation-delay: 1.5s;
-    }
-    @keyframes bloom {
+    /* Heart pulsating animation */
+    @keyframes pulse {
       0% {
-        transform: scale(0);
-        opacity: 0;
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.8;
       }
       100% {
         transform: scale(1);
         opacity: 1;
       }
-    }
-    /* Falling petals */
-    .petal {
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      background-color: #FF69B4; /* Pink petal color */
-      border-radius: 50%;
-      opacity: 0;
-      animation: fall 3s infinite ease-in-out;
-    }
-    .petal:nth-child(4) {
-      top: 30px;
-      left: 50px;
-      animation-delay: 1s;
-    }
-    .petal:nth-child(5) {
-      top: 120px;
-      left: 140px;
-      animation-delay: 1.5s;
-    }
-    .petal:nth-child(6) {
-      top: 160px;
-      left: 180px;
-      animation-delay: 2s;
-    }
-    @keyframes fall {
-      0% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(150px) scale(0.5);
-        opacity: 0;
-      }
-    }
-    /* Removing button section */
-    .button-container {
-      display: none; /* No buttons on this page */
     }
   </style>
 </head>
@@ -119,17 +59,8 @@
   
   <h2>I potato you.</h2>
 
-  <div class="flower-container">
-    <!-- Flower Blooming -->
-    <div class="flower"></div>
-    <div class="flower"></div>
-    <div class="flower"></div>
-    
-    <!-- Falling Petals -->
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
+  <div class="heart-container">
+    <div class="heart"></div>
   </div>
-
 </body>
 </html>
