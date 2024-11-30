@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Being In My Life</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #FFF8DC; /* Light yellow background */
+      color: #FF69B4; /* Pink text */
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 50px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+    .flower-container {
+      position: relative;
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin-top: 50px;
+    }
+    .flower {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #FF1493; /* Pink color */
+      border-radius: 50%;
+      animation: bloom 2s ease-out forwards;
+    }
+    .flower:nth-child(1) {
+      top: 80px;
+      left: 50px;
+      animation-delay: 0.5s;
+    }
+    .flower:nth-child(2) {
+      top: 60px;
+      left: 120px;
+      animation-delay: 1s;
+    }
+    .flower:nth-child(3) {
+      top: 100px;
+      left: 190px;
+      animation-delay: 1.5s;
+    }
+    @keyframes bloom {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .petal {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #FF69B4; /* Pink petal color */
+      border-radius: 50%;
+      opacity: 0;
+      animation: fall 3s infinite ease-in-out;
+    }
+    .petal:nth-child(4) {
+      top: 30px;
+      left: 40px;
+      animation-delay: 1s;
+    }
+    .petal:nth-child(5) {
+      top: 110px;
+      left: 120px;
+      animation-delay: 1.5s;
+    }
+    .petal:nth-child(6) {
+      top: 150px;
+      left: 170px;
+      animation-delay: 2s;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(200px) scale(0.5);
+        opacity: 0;
+      }
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #FF69B4; /* Pink button */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #FF1493; /* Darker pink on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>I'm so grateful to have crossed paths with you.</h1>
+  
+  <h2>I potato you.</h2>
+
+  <div class="flower-container">
+    <!-- Flowers -->
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    
+    <!-- Petals falling -->
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+  </div>
+
+  <div class="button-container">
+    <a href="last_page.html" class="button">Click Me</a>
+  </div>
+</body>
+</html>
