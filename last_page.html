@@ -24,31 +24,43 @@
     .flower-container {
       position: relative;
       display: inline-block;
-      width: 300px;
-      height: 300px;
+      width: 200px;
+      height: 200px;
       margin-top: 50px;
     }
+    /* Flower appearance */
     .flower {
       position: absolute;
-      width: 50px;
-      height: 50px;
-      background-color: #FF1493; /* Pink color */
+      width: 70px;
+      height: 70px;
+      background-color: #FF1493; /* Pink color for the flower */
       border-radius: 50%;
       animation: bloom 2s ease-out forwards;
     }
+    .flower::before, .flower::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-color: #FF69B4;
+      border-radius: 50%;
+      top: -25px;
+      left: -15px;
+      transform: rotate(45deg);
+    }
     .flower:nth-child(1) {
-      top: 80px;
+      top: 60px;
       left: 50px;
       animation-delay: 0.5s;
     }
     .flower:nth-child(2) {
-      top: 60px;
-      left: 120px;
+      top: 40px;
+      left: 130px;
       animation-delay: 1s;
     }
     .flower:nth-child(3) {
       top: 100px;
-      left: 190px;
+      left: 120px;
       animation-delay: 1.5s;
     }
     @keyframes bloom {
@@ -61,10 +73,11 @@
         opacity: 1;
       }
     }
+    /* Falling petals */
     .petal {
       position: absolute;
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       background-color: #FF69B4; /* Pink petal color */
       border-radius: 50%;
       opacity: 0;
@@ -72,17 +85,17 @@
     }
     .petal:nth-child(4) {
       top: 30px;
-      left: 40px;
+      left: 50px;
       animation-delay: 1s;
     }
     .petal:nth-child(5) {
-      top: 110px;
-      left: 120px;
+      top: 120px;
+      left: 140px;
       animation-delay: 1.5s;
     }
     .petal:nth-child(6) {
-      top: 150px;
-      left: 170px;
+      top: 160px;
+      left: 180px;
       animation-delay: 2s;
     }
     @keyframes fall {
@@ -91,27 +104,13 @@
         opacity: 1;
       }
       100% {
-        transform: translateY(200px) scale(0.5);
+        transform: translateY(150px) scale(0.5);
         opacity: 0;
       }
     }
+    /* Removing button section */
     .button-container {
-      margin-top: 30px;
-    }
-    .button {
-      display: inline-block;
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 1.2em;
-      color: white;
-      background-color: #FF69B4; /* Pink button */
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .button:hover {
-      background-color: #FF1493; /* Darker pink on hover */
+      display: none; /* No buttons on this page */
     }
   </style>
 </head>
@@ -121,19 +120,16 @@
   <h2>I potato you.</h2>
 
   <div class="flower-container">
-    <!-- Flowers -->
+    <!-- Flower Blooming -->
     <div class="flower"></div>
     <div class="flower"></div>
     <div class="flower"></div>
     
-    <!-- Petals falling -->
+    <!-- Falling Petals -->
     <div class="petal"></div>
     <div class="petal"></div>
     <div class="petal"></div>
   </div>
 
-  <div class="button-container">
-    <a href="last_page.html" class="button">Click Me</a>
-  </div>
 </body>
 </html>
