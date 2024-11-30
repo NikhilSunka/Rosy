@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuisine Selection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #FFF8DC; /* Light yellow background */
+      color: #FF69B4; /* Pink text */
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 50px;
+    }
+    .cuisine-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px auto;
+      gap: 20px;
+    }
+    .cuisine-item {
+      width: 200px;
+      text-align: center;
+    }
+    .cuisine-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .cuisine-item label {
+      display: block;
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .button-container {
+      margin: 30px auto;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #FF69B4; /* Pink button */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #FF1493; /* Darker pink on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>What Food Would You Like to Eat Honeybun?</h1>
+
+  <form action="dessert_selection.html" method="GET">
+    <div class="cuisine-container">
+      <!-- Cuisine Item 1 -->
+      <div class="cuisine-item">
+        <img src="assets/chinese_hotpot.jpeg" alt="Chinese Hotpot">
+        <label>
+          <input type="checkbox" name="cuisine" value="Chinese Hotpot">
+          Chinese Hotpot
+        </label>
+      </div>
+
+      <!-- Cuisine Item 2 -->
+      <div class="cuisine-item">
+        <img src="assets/dumplings.jpeg" alt="Dumplings">
+        <label>
+          <input type="checkbox" name="cuisine" value="Dumplings">
+          Dumplings
+        </label>
+      </div>
+
+      <!-- Cuisine Item 3 -->
+      <div class="cuisine-item">
+        <img src="assets/noodles.jpeg" alt="Noodles">
+        <label>
+          <input type="checkbox" name="cuisine" value="Noodles">
+          Noodles
+        </label>
+      </div>
+
+      <!-- Cuisine Item 4 -->
+      <div class="cuisine-item">
+        <img src="assets/italian_food.jpeg" alt="Italian Food">
+        <label>
+          <input type="checkbox" name="cuisine" value="Italian Food">
+          Italian Food
+        </label>
+      </div>
+
+      <!-- Cuisine Item 5 -->
+      <div class="cuisine-item">
+        <img src="assets/korean_food.jpeg" alt="Korean Food">
+        <label>
+          <input type="checkbox" name="cuisine" value="Korean Food">
+          Korean Food
+        </label>
+      </div>
+
+      <!-- Cuisine Item 6 -->
+      <div class="cuisine-item">
+        <img src="assets/thai_pho.jpeg" alt="Thai Pho">
+        <label>
+          <input type="checkbox" name="cuisine" value="Thai Pho">
+          Thai Pho
+        </label>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="button">Click Me Rosy</button>
+    </div>
+  </form>
+</body>
+</html>
