@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Are We Doing After Tomato?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #FFF8DC; /* Light yellow background */
+      color: #FF69B4; /* Pink text */
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 50px;
+    }
+    .options-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px auto;
+      gap: 30px;
+    }
+    .option-item {
+      width: 200px;
+      text-align: center;
+    }
+    .option-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .option-item label {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .button-container {
+      margin: 30px auto;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #FF69B4; /* Pink button */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #FF1493; /* Darker pink on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>What Are We Doing After Tomato?</h1>
 
+  <form action="last_page.html" method="GET">
+    <div class="options-container">
+      <!-- Option 1: Arcade -->
+      <div class="option-item">
+        <img src="assets/arcade.jpeg" alt="Arcade">
+        <label>
+          <input type="checkbox" name="activity" value="Arcade">
+          Arcade
+        </label>
+      </div>
+
+      <!-- Option 2: Park -->
+      <div class="option-item">
+        <img src="assets/park.jpeg" alt="Park">
+        <label>
+          <input type="checkbox" name="activity" value="Park">
+          Park
+        </label>
+      </div>
+
+      <!-- Option 3: Drinks -->
+      <div class="option-item">
+        <img src="assets/drinks.jpeg" alt="Get Drinks">
+        <label>
+          <input type="checkbox" name="activity" value="Get Drinks">
+          Get Drinks
+        </label>
+      </div>
+
+      <!-- Option 4: Christmas Fair -->
+      <div class="option-item">
+        <img src="assets/christmas_fair.jpeg" alt="Christmas Fair">
+        <label>
+          <input type="checkbox" name="activity" value="Christmas Fair">
+          Dublin Christmas Fair
+        </label>
+      </div>
+
+      <!-- Option 5: Museum -->
+      <div class="option-item">
+        <img src="assets/movie.jpeg" alt="Watch a Movie">
+        <label>
+          <input type="checkbox" name="activity" value="Watch a Movie">
+          Go For a Movie
+        </label>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="button">Click Me Rosy</button>
+    </div>
+  </form>
+</body>
+</html>
